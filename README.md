@@ -22,13 +22,13 @@ Welcome to Aaron Woo's ADM6012 Assignment 1. This is a responsive website showca
 
 ## 🏗️ Project Structure
 Aaronwoo/
-├── index.html
-├── images/
-│   ├── banner.jpg
-│   ├── curry-fish-balls.jpg
-│   ├── rice-rolls.jpg
-│   └── egg-tarts.jpg
-└── README.md
+- index.html
+  - images/
+    - banner.jpg
+    - curry-fish-balls.jpg
+    - rice-rolls.jpg
+    - egg-tarts.jpg
+- README.md
 
 ## 🚀 Installation (for local dev)
 1. Clone repo:
