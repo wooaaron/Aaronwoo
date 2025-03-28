@@ -2,7 +2,7 @@
 
 ![Project Preview](screenshots/preview.jpg) 
 
-A responsive website showcasing iconic Hong Kong street food with multimedia content, designed for accessibility and seamless viewing.
+Welcome to Aaron Woo's ADM6012 Assignment 1. This is a responsive website showcasing iconic Hong Kong street food with multimedia content, designed for accessibility and seamless viewing.
 
 ## ✨ Features
 - **Food Highlights**: Curated selection of must-try street foods with descriptions
