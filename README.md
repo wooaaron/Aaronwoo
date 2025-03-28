@@ -23,8 +23,6 @@ A responsive website showcasing iconic Hong Kong street food with multimedia con
 ## 🏗️ Project Structure
 Aaronwoo/
 ├── index.html
-├── styles/
-│   └── styles.css
 ├── images/
 │   ├── banner.jpg
 │   ├── curry-fish-balls.jpg
