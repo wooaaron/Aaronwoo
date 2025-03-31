@@ -89,7 +89,7 @@
         /* Locations Section */
         .locations {
             padding: 3rem 2rem;
-            background-color: #d8e1d8;
+            background-color: #c3d8c4;
         }
         
         .locations-container {
@@ -101,27 +101,43 @@
         }
         
         .location-item {
-            background: white;
+            background: #d8e1d8;
             border-radius: 8px;
             overflow: hidden;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .location-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
         }
         
         .location-item img {
             width: 100%;
             height: 200px;
             object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        
+        .location-item:hover img {
+            transform: scale(1.03);
         }
         
         .location-content {
             padding: 1.5rem;
         }
         
+        .location-content h3 {
+            color: #61900F;
+            margin-bottom: 1rem;
+        }
+        
         /* Video Section */
         .video-section {
             padding: 3rem 2rem;
             text-align: center;
-            background-color: #C3D8C4;
+            background-color: #c3d8c4;
         }
         
         .video-container {
@@ -146,7 +162,7 @@
         
         /* Footer */
         footer {
-            background-color: #503d42;
+            background-color: #503D42;
             color: white;
             text-align: center;
             padding: 2rem;
@@ -191,6 +207,7 @@
         }
     </style>
 </head>
+<body>
 <body>
     <!-- Dynamic Banner -->
     <section class="banner">
