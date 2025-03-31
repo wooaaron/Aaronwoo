@@ -15,8 +15,8 @@
         body {
             font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            color: #503D42;
-            background-color: #F5FBEF;
+            color: #000;
+            background-color: #fff;
         }
         
         /* Dynamic Banner */
@@ -86,6 +86,37 @@
             color: #d32f2f;
         }
         
+        /* Locations Section */
+        .locations {
+            padding: 3rem 2rem;
+            background-color: #f0f0f0;
+        }
+        
+        .locations-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        
+        .location-item {
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        
+        .location-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        .location-content {
+            padding: 1.5rem;
+        }
+        
         /* Video Section */
         .video-section {
             padding: 3rem 2rem;
@@ -132,6 +163,12 @@
             color: #ffd700;
         }
         
+        .credits {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            margin-top: 1rem;
+        }
+        
         /* Accessibility Focus Styles */
         a:focus,
         button:focus {
@@ -144,11 +181,11 @@
                 height: 40vh;
             }
             
-            .food-section {
+            .food-section, .locations-container {
                 grid-template-columns: 1fr;
             }
             
-            .intro, .video-section {
+            .intro, .video-section, .locations {
                 padding: 2rem 1rem;
             }
         }
@@ -176,6 +213,7 @@
             <div class="food-content">
                 <h3>Curry Fish Balls</h3>
                 <p>These bouncy fish balls soaked in fragrant curry sauce are a Hong Kong street food staple. Served on skewers for easy eating on the go, they offer a perfect balance of spicy and savory flavors that locals have loved for generations.</p>
+                <p>Originally introduced by Chiu Chow immigrants, the curry sauce has evolved into a distinctly Hong Kong style - less spicy than Indian curry but more aromatic than Japanese versions. Vendors simmer the fish balls for hours in this signature sauce, creating addictive snacks that cost just a few Hong Kong dollars per skewer.</p>
             </div>
         </article>
         
@@ -184,6 +222,7 @@
             <div class="food-content">
                 <h3>Rice Rolls</h3>
                 <p>Silky smooth rice noodle sheets rolled and drizzled with sweet soy sauce, sesame paste, and hoisin sauce. Often stuffed with ingredients like beef, shrimp, or fried dough sticks, these delicate rolls are a breakfast favorite.</p>
+                <p>The art of making rice rolls involves steaming thin layers of rice flour batter on cloth-covered trays, a technique perfected by Hong Kong street vendors. What makes them special is the texture - the best versions are so soft they practically melt in your mouth. Morning commuters often grab these to eat on the go, wrapped in paper or Styrofoam containers.</p>
             </div>
         </article>
         
@@ -192,8 +231,60 @@
             <div class="food-content">
                 <h3>Egg Tarts</h3>
                 <p>Hong Kong's famous egg tarts feature buttery puff pastry filled with wobbly, creamy egg custard. With Portuguese influences but distinctly local adaptations, these golden treats are best enjoyed fresh from the oven.</p>
+                <p>The Hong Kong version differs from its Macanese cousin by using a flaky puff pastry instead of shortcrust. Local bakeries perfected the recipe in the 1940s, creating a lighter texture that contrasts beautifully with the rich custard. The ideal tart should have pastry that shatters delicately with each bite while the custard remains smooth and jiggly.</p>
             </div>
         </article>
+
+        <article class="food-item">
+            <img src="images/egg-waffle.jpg" alt="Egg Waffle">
+            <div class="food-content">
+                <h3>Egg Waffle (Gai Daan Jai)</h3>
+                <p>These iconic bubble-shaped waffles are one of Hong Kong's most recognizable street foods. Made with a sweet egg batter cooked in a special two-sided mold, they develop crispy exteriors while staying soft and chewy inside.</p>
+                <p>The origins date back to the 1950s when vendors began using leftover egg batter to create affordable snacks. Today's versions come in creative flavors like matcha, chocolate, and even savory cheese. The best way to eat them is fresh off the griddle, tearing off each bubble one by one while walking through the bustling streets.</p>
+            </div>
+        </article>
+
+        <article class="food-item">
+            <img src="images/tofu-pudding.jpg" alt="Tofu Pudding">
+            <div class="food-content">
+                <h3>Tofu Pudding (Douhua)</h3>
+                <p>This silky-smooth dessert made from freshly prepared soy milk represents the softer side of Hong Kong street food. Served warm or chilled, it's traditionally topped with ginger syrup, red bean paste, or simple sugar.</p>
+                <p>Hong Kong vendors take pride in making their tofu pudding from scratch daily, using traditional stone grinders to process the soybeans. The texture should be so delicate it barely holds together when scooped. Many stalls have been perfecting their recipes for generations, with some operating at the same street corners for over 50 years.</p>
+            </div>
+        </article>
+    </section>
+
+    <!-- Popular Locations -->
+    <section class="locations">
+        <h2 style="text-align: center; margin-bottom: 2rem;">Iconic Street Food Locations</h2>
+        <div class="locations-container">
+            <article class="location-item">
+                <img src="images/temple-street.jpg" alt="Temple Street Night Market">
+                <div class="location-content">
+                    <h3>Temple Street Night Market</h3>
+                    <p>This famous night market in Yau Ma Tei transforms after sunset into a street food paradise. The sizzle of woks and aroma of grilled seafood fill the air as vendors set up makeshift kitchens along the bustling alleyways.</p>
+                    <p>Must-try foods here include clay pot rice cooked over charcoal, typhoon shelter crab loaded with garlic and chili, and stinky tofu that's an acquired taste. The market reaches peak vibrancy around 8pm when locals and tourists alike come to feast under the neon lights.</p>
+                </div>
+            </article>
+            
+            <article class="location-item">
+                <img src="images/tai-on-building.jpg" alt="Tai On Building">
+                <div class="location-content">
+                    <h3>Tai On Building, Sai Wan Ho</h3>
+                    <p>This unassuming residential building hides one of Hong Kong's best-kept street food secrets in its ground floor arcade. Dozens of micro-stalls squeeze into the narrow space, each specializing in one particular dish perfected over decades.</p>
+                    <p>The highlights include fish ball noodles with house-made chili oil, glutinous rice wrapped in lotus leaf, and the building's famous pork knuckle with ginger and vinegar. Arrive early as many stalls sell out by 2pm. Don't expect seating - this is authentic stand-and-eat street dining.</p>
+                </div>
+            </article>
+            
+            <article class="location-item">
+                <img src="images/causeway-bay.jpg" alt="Causeway Bay">
+                <div class="location-content">
+                    <h3>Causeway Bay Food Streets</h3>
+                    <p>The streets around Causeway Bay's shopping districts offer non-stop street food action from morning until midnight. Here you'll find the modern evolution of Hong Kong street food alongside traditional favorites.</p>
+                    <p>Look for innovative fusion snacks like truffle egg sandwiches, Japanese-style taiyaki with local fillings, and artisanal bubble tea stands. The area around Jardine's Crescent is particularly dense with vendors. For traditionalists, there are still plenty of dai pai dongs (open-air food stalls) serving classic noodle dishes and congee.</p>
+                </div>
+            </article>
+        </div>
     </section>
     
     <!-- Video Section -->
@@ -202,7 +293,7 @@
         <p>This is just a small taste of Hong Kong's incredible street food selection. Watch the below video to explore more delicious options:</p>
         
         <div class="video-container">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/IdRWfYAyP04" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/yWOM-Zb6ZK4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
         
         <p>For official travel information, visit the <a href="https://www.discoverhongkong.com" target="_blank" rel="noopener noreferrer">Hong Kong Tourism Board website</a>.</p>
@@ -212,6 +303,7 @@
     <footer>
         <p>Copyright &copy; 2025 by Yiu Lun Aaron Woo s8163361</p>
         <p>Follow me on <a href="https://www.instagram.com/aaronizer.woo/" target="_blank" rel="noopener noreferrer">Instagram</a></p>
+        <p class="credits">All photos used in this website are licensed through iStock. AI assistance was used for content organization and code optimization.</p>
     </footer>
 </body>
 </html>
